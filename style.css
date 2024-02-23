@@ -243,6 +243,19 @@ nav ul li a:hover {
     align-self: center;
 }
 
+#u8TV-box h3 {
+    color: var(--color3);
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;; /* 1px wide black outline */
+}
+
+#u8TV-box h4 {
+    color: var(--color1);
+}
+
 #u8content-box iframe,
 #u8TV-box iframe {
     width: 560px; /* Make the iframe take up the full width of its container */
