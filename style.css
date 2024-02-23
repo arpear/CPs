@@ -615,7 +615,7 @@ nav ul li a:hover {
 
     .main-content {
         margin-top: 50px; /* Adjust this value as needed */
-        font-size: 1.3rem;
+        font-size: 1rem;
         line-height: 1.2;
     }
 
@@ -632,11 +632,11 @@ nav ul li a:hover {
 
     h1, h2, h3, h4 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -700,7 +700,7 @@ nav ul li a:hover {
         color: rgba(0, 13, 26, 0.158);
         text-align: center; /* Center the arrow symbol */
         text-decoration: none; /* Remove underline from link */
-        font-size: 3.2rem; /* Increase size of arrow symbol */
+        font-size: 3.5rem; /* Increase size of arrow symbol */
         font-weight: 900;
         transition: color 0.3s, width 0.3s, height 0.3s; /* Smooth transition for color, width, and height */
         z-index: 79; /* Ensure it's above other elements */
