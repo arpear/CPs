@@ -1,0 +1,779 @@
+:root {
+    --color1: #F4F5F4; /* background color */
+    --color2: #ad83e7; /* text color - darker gray for better readability */
+    --color3: #FFD639; /* accent color - muted green */
+    --color4: #FFA3AF; /* link color - softer blue */
+    --color5: #007CBE; /* second accent color - light gray */
+    --color6: #cade72; /* alert color - softer tone */
+    --color7: rgb(0, 13, 26); /* dark color - deep blue for headings */
+    --color8: #ff5050;
+    --color9: #00344d;
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: var(--color5);
+    background-size: cover;
+    font-family: 'Playful Font', sans-serif;
+    color: var(--color1);
+    font-family: "mastro-display", sans-serif;
+    font-size: 1.4rem;
+}
+
+.h1, h2, h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "mastro-display", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 55px;
+}
+
+h1.main {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 5%;
+    color: rgba(0, 13, 26, 0.158);
+    text-align: center; /* Center the arrow symbol */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 50px; /* Increase size of arrow symbol */
+    font-weight: 900;
+    transition: color 0.3s, width 0.3s, height 0.3s; /* Smooth transition for color, width, and height */
+    z-index: 100; /* Ensure it's above other elements */
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    color: var(--color4); /* White arrow color */
+}
+
+h2 {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+h3 {
+    text-indent: 25px;
+    color: #163943;
+    font-weight: 800;
+    background-color: #16394308;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h4 {
+    text-indent: 35px;
+    color: var(--color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+p {
+    text-indent: 20px;
+    font-size: 1.3rem;
+}
+
+.blurred {
+    filter: blur(4px); /* Adjust the blur value as needed */
+}
+
+div.main {
+    margin-bottom: 0px;
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center; /* Centers children vertically */
+}
+
+h1.main {
+    margin-bottom: 50px;
+    opacity: 70%;
+}
+
+h1.main:hover {
+    margin-bottom: 50px;
+    opacity: 100%;
+    transition: opacity 0.5s ease
+}
+
+a.main {
+    font-family: "p22-nudgewink-pro", sans-serif;
+    font-size: 3.5rem;
+    color: var(--color);
+    padding: 20px;
+    text-decoration: none;
+    /* Add the following styles for the hover effect */
+    transition: color 0.5s ease, text-decoration 0.5s ease, text-shadow 0.5s ease; /* Add transitions for a smooth effect */
+}
+
+a.main:hover {
+    color: var(--color4); /* Change the text color on hover */
+    text-decoration: underline; /* Add an underline on hover */
+    text-shadow: 1px 1px 2px #00000032; /* Add a drop shadow on hover */
+}
+
+#contentLinks {
+    height: 400px;
+    font-size: 2rem;
+}
+
+nav {
+    height: fit-content;
+    margin-bottom: 400px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    font-family: "p22-nudgewink-pro", sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul li a {
+    color: var(--link-color); /* Applying the dark blue color to links */
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: var(--color1);
+    text-align: left;
+    margin-left: 5px;
+    padding: 2px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--color4);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+#contentLinks ul {
+    list-style-type: none; /* Optional: removes bullet points */
+    padding: 0; /* Optional: removes default padding */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#contentLinks li {
+    display: block; /* Makes each list item a block-level element */
+    margin-bottom: 10px; /* Optional: adds some space between the items */
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: var(--color5);
+}
+
+#u8content-box {
+    background-color: var(--color1); /* Light grey background */
+    padding: 50px;
+    width: fit-content;
+    border: 1px solid var(--color5); /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    color: var(--color7);
+}
+
+
+#u8content-box a {
+    color: var(--color5); /* Dark blue color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the font bold */
+    margin-left: 50px; /* Indent the link */
+    padding: 2px;
+    align-self: center;
+}
+
+#u8content-box a:hover,
+#u8TV-box a:hover {
+    background-color: var(--color6);
+    color: #1b353d;
+}
+
+#u8content-box li,
+#u8TV-box li {
+    position: relative; /* Needed for positioning the pseudo-element */
+    padding-left: 25px; /* Provides space for the checkmark */
+    margin-bottom: 10px; /* Space between list items */
+    list-style-type: none;
+    line-height: 2;
+}
+
+#u8content-box li::before {
+    content: '✔'; /* The check mark */
+    position: absolute;
+    left: 0; /* Aligns the checkmark to the left */
+    top: 0; /* Aligns the checkmark to the top */
+    color: var(--color2); /* Optional: checkmark color */
+    font-size: 20px; /* Adjusts the size of the checkmark */
+}
+
+#u8TV-box {
+    background-color: var(--color5); /* Light grey background */
+    padding: 50px;
+    width: fit-content;
+    border: 1px solid var(--color5); /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    color: var(--color7);
+}
+
+#u8TV-box a {
+    color: var(--color1); /* Dark blue color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the font bold */
+    margin-left: 50px; /* Indent the link */
+    padding: 2px;
+    align-self: center;
+}
+
+#u8content-box iframe,
+#u8TV-box iframe {
+    width: 560px; /* Make the iframe take up the full width of its container */
+    height: 315px; /* Set a specific height for the iframe */
+    border: none; /* Remove the border around the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for some depth */
+    border-radius: 10px; /* Optional: Round the corners of the iframe */
+}
+
+.theme-box::after {
+    content: ''; /* Required for pseudo-elements */
+    display: block;
+    height: 2px; /* Height of the divider */
+    background-color: var(--color2); /* Color of the divider */
+    width: 80%; /* Width of the divider */
+    position: absolute;
+    left: 10%; /* Centers the divider */
+    bottom: 15px; /* Position from the bottom of the theme-box */
+}
+
+.theme-box:last-child::after {
+    display: none; /* Hides the divider on the last theme-box */
+}
+
+.theme-box {
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    padding-top: 30px;
+    padding-bottom: 50px; /* Space above the divider */
+    margin-bottom: 30px; /* Space for the divider */
+}
+
+.theme-box h2 {
+    font-family: "p22-nudgewink-pro", sans-serif;
+    font-size: 2.8rem;
+}
+
+.theme-box h3 {
+    font-family: "p22-nudgewink-pro", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.theme-objectives {
+    border-radius: 10px;
+    border: 5px dotted var(--color1);
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.theme-objectives:hover {
+    border-radius: 10px;
+    border: 5px dotted var(--color2);
+}
+
+.subtheme > .theme-objectives {
+    border: 5px dotted var(--color1);
+}
+
+.subtheme-header {
+    cursor: pointer; /* Indicates the header is clickable */
+    font-weight: bold;
+}
+
+.subtheme-header {
+    cursor: pointer; /* Indicates the header is clickable */
+    font-weight: bold;
+}
+
+.subtheme-header:hover, .subtheme-header.active {
+    background-color: var(--color3);
+    color: #00344d; /* Change as per your color scheme */
+}
+
+.subtheme > .theme-objectives {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Optional styling */
+}
+
+.u8theme-box-links {
+    text-align: center; /* Center aligns the content */
+}
+
+.u8theme-box-links a {
+    display: block; /* Makes each link an inline-block element */
+    margin: 5px 0; /* Provides vertical space between links */
+    /* Add any other styling you want for your links here */
+}
+
+.teacher-info {
+    position: fixed;
+    color: var(--color7);
+    top: 30px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-color: var(--color4); /* Dark blue circle */
+    text-align: center;
+    cursor: pointer;
+    z-index: 70; /* Ensure it's above other elements */
+    transition: border 0.3s; /* Smooth transition for the border */
+}
+
+.teacher-info:hover {
+    border: 3px dashed var(--color1); /* 3px black border on hover */
+}
+
+.teacher-info-box {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px; /* Position right of the circle */
+    width: 250px; /* Adjust as needed */
+    background-color: var(--color1);
+    border-radius: 10px;
+    border: 3px solid #efc30200;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+    padding: 15px;
+}
+
+.teacher-info-box ul, h1, h2, h3, h4 {
+    list-style-type: none;
+}
+
+.teacher-info:hover .teacher-info-box {
+    display: block; /* Show info box on hover */
+    border: 3px dashed var(--color4);
+}
+
+.teacher-info.active {
+    border: 3px solid var(--color1);
+    display: block;
+    background-color: var(--color4);
+}
+
+#welcomeMessage {
+    opacity: 70%;
+    transition: opacity 0.5s ease;
+}
+
+#welcomeMessage:hover {
+    opacity: 100%;
+}
+
+.language-bar {
+    text-align: center; /* Center the content */
+    padding: 10px 0; /* Optional: Adds padding above and below */
+    margin: 0 auto; /* Centers the bar */
+    color: var(--color1);
+    opacity: 70%;
+    transition: opacity 0.5s ease;
+}
+
+.language-bar .language {
+    cursor: pointer; /* Changes cursor to indicate clickable items */
+}
+
+.language-bar:hover {
+    cursor: pointer;
+    font-style: italic;
+    opacity: 100%;
+}
+
+.language-message-box {
+    max-width: 600px; /* Maximum width of the box */
+    color: var(--color7);
+    margin: 20px auto; /* Centers the box horizontally with margin */
+    padding: 20px;
+    text-align: center; /* Center-aligns the text within the box */
+    background-color: var(--color1); /* Background color */
+    border-radius: 10px;
+    border: 2px dashed var(--color5);
+}
+
+.language-message#en {
+    display: block; /* Show English message by default */
+}
+
+.button-container-large {
+    display: flex;
+}
+
+/* Common styles for all buttons */
+.home-button, .materials-button, .games-button {
+    position: fixed;
+    color: #b8ebffd3; /* Default color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px; /* Default size */
+    transition: color 0.3s, left 0.3s;
+    z-index: 10;
+}
+
+/* Unique position and hover color for each button */
+.home-button {
+    top: 40px;
+    left: 30px;
+}
+
+.materials-button {
+    top: 165px;
+    left: 30px;
+}
+
+.games-button {
+    top: 105px;
+    left: 33px;
+    font-size: 38px; /* Slightly larger size for games button */
+}
+
+/* Hover styles for each button */
+.home-button:hover {
+    left: 40px;
+    color: var(--color3);
+}
+
+.materials-button:hover {
+    left: 40px;
+    color: var(--color9);
+}
+
+.games-button:hover {
+    left: 40px;
+    color: var(--color8);
+}
+
+/* Common icon style */
+.home-button i, .materials-button i, .games-button i {
+    display: block;
+    line-height: 25px; /* Aligns icon within the button */
+}
+
+.popup-box {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    right: 15%;
+    top: 15%;
+    width: 850px; /* Full width */
+    height: 700px; /* Full height */
+    overflow: hidden; /* Hide overflow */
+    background-color: var(--color1); /* Fallback color */
+    border: 5px solid var(--color4);
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 60px; /* Space for popup-buttons */
+}
+
+.popup-buttons {
+    width: calc(100% - 20px); /* Adjust width considering padding */
+    text-align: center; /* Align buttons to the center */
+    padding: 10px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the width */
+    position: absolute; /* Position the button container absolutely */
+    top: 0; /* Align it to the top of the popup box */
+    left: 10px; /* Align it to the start, considering padding */
+    align-content: center;
+    z-index: 101; /* Ensure it's above the content */
+}
+
+.popup-content {
+    background-color: #fefefe;
+    color: var(--color7);
+    padding: 20px;
+    width: 95%; /* Could be more or less, depending on screen size */
+    height: calc(100% - 60px); /* Adjust height considering popup-buttons */
+    overflow: auto; /* Enable scroll for the content */
+}
+
+
+.close-btn {
+    color: var(--color7);
+    float: right; /* Aligns the close button to the right */
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    margin-right: 10px; /* Space between close and border */
+    align-content: center;
+    border: 1px solid var(--color9);
+    border-radius: 3px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--color8);
+    background: var(--color9);
+    cursor: pointer;
+    border: 2px solid var(--color9);
+    border-radius: 3px;
+}
+
+.maximize-btn {
+    color: var(--color7);
+    padding-top: 2px;
+    width: 30px;
+    height: 30px;
+    float: right; /* Aligns the maximize button to the right */
+    margin-right: 10px; /* Space between close and maximize buttons */
+    margin: 5px;
+    align-content: center;
+    border: 1px solid var(--color9);
+    border-radius: 3px;
+}
+
+.maximize-btn:not(.active):hover,
+.maximize-btn:not(.active):focus {
+    color: var(--color8);
+    background: var(--color9);
+    cursor: pointer;
+    border: 2px solid var(--color9);
+    border-radius: 3px;
+}
+
+.maximize-btn.active {
+    color: var(--color8);
+    background: var(--color9);
+    border: 2px solid var(--color9);
+    border-radius: 3px;
+}
+
+.blur-toggle-btn {
+    color: var(--color7);
+    padding-top: 2px;
+    width: 30px;
+    height: 30px;
+    float: right; /* Aligns the maximize button to the right */
+    margin-right: 10px; /* Space between close and maximize buttons */
+    margin: 5px;
+    align-content: center;
+    border: 1px solid var(--color9);
+    border-radius: 3px;
+}
+
+.blur-toggle-btn:not(.active):hover,
+.blur-toggle-btn:not(.active):focus {
+    color: var(--color8);
+    background: var(--color9);
+    cursor: pointer;
+    border: 2px solid var(--color9);
+    border-radius: 3px;
+}
+
+.blur-toggle-btn.active {
+    color: var(--color8);
+    background: var(--color9);
+    border: 2px solid var(--color9);
+    border-radius: 3px;
+}
+
+.menu-icon {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: var(--color1); /* Adjust color as needed */
+    z-index: 15;
+    cursor: pointer;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+
+    .main-content {
+        margin-top: 50px; /* Adjust this value as needed */
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+
+    .button-container-large {
+        display: none;
+    }
+
+    div.main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    h1, h2, h3, h4 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    li {
+        font-size: 1.5rem;
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon */
+        position: fixed;
+        top: 20px;
+        left: 30px;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 100;
+        color: var(--color4);
+        opacity: 80%;
+    }
+
+    .button-container-small {
+        display: none; /* Hide the button container initially */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color1); /* Darker semi-transparent background */
+        flex-direction: column;
+        justify-content: center; /* Vertically center the content */
+        align-items: center; /* Horizontally center the content */
+        z-index: 80;
+    }
+
+    .button-container-small.active {
+        display: flex;
+    }
+
+    .home-button, .materials-button, .games-button {
+        font-size: 5rem; /* Larger buttons for easier clicking */
+        margin: 20px 0; /* Space between buttons */
+        color: var(--color2); /* Adjust color to increase visibility */
+        position: relative; /* Override fixed position */
+        left: auto; /* Reset left position */
+        top: auto; /* Reset top position */
+        transition: none;
+        left: auto;
+        &:hover {
+            left: auto; /* Keep the button stationary */
+            /* Apply color change */
+        }
+    }
+
+    /* Ensure icons within buttons are also centered */
+    .home-button i, .materials-button i, .games-button i {
+        line-height: 1; /* Adjust line height for better alignment */
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 3%;
+        color: rgba(0, 13, 26, 0.158);
+        text-align: center; /* Center the arrow symbol */
+        text-decoration: none; /* Remove underline from link */
+        font-size: 3.2rem; /* Increase size of arrow symbol */
+        font-weight: 900;
+        transition: color 0.3s, width 0.3s, height 0.3s; /* Smooth transition for color, width, and height */
+        z-index: 79; /* Ensure it's above other elements */
+        cursor: pointer;
+    }
+
+    nav ul li h4 {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        font-family: "p22-nudgewink-pro", sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    #u8content-box {
+        background-color: var(--color1); /* Light grey background */
+        padding: 2px;
+        width: 100%;
+        border: 1px solid var(--color5); /* Light grey border */
+        border-radius: 5px; /* Rounded corners */
+        color: var(--color7);
+    }
+
+    #u8content-box a {
+        display: block; /* Make each link a block-level element */
+        text-align: center; /* Center the text inside the link */
+        margin: 0px auto; /* Add vertical space and auto horizontal margins */
+        line-height: 1.2;
+        /* Other styles you want to apply to links on small screens */
+    }
+
+    .popup-box {
+        display: none; /* Keep it hidden by default */
+        position: fixed;
+        z-index: 100; /* Ensure it is on top */
+        top: 0; /* Align to the top of the viewport */
+        left: 0; /* Align to the left of the viewport */
+        width: 100%; /* Full width of the viewport */
+        height: 100%; /* Full height of the viewport */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: var(--color1); /* Fallback color */
+        border: none; /* Optional: remove the border for full screen */
+        padding: 20px; /* Adjust padding as needed */
+        box-sizing: border-box; /* Include padding in the width and height */
+    }
+
+    .teacher-info {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .teacher-info-box {
+        display: none;
+        position: absolute;
+        background-color: var(--color1);
+        border-radius: 10px;
+        border: 3px solid #efc30200;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .iframe-container {
+        padding-top: 75%; /* Adjust the aspect ratio for vertical orientation or as needed */
+    }
+
+    /* Target specific iframe styles if necessary */
+    #u8content-box iframe, 
+    #u8TV-box iframe {
+        width: 100%; /* Ensure iframes are full width on small screens */
+        height: auto; /* Adjust height automatically */
+        border-radius: 5px; /* Optional: Smooth corners */
+        box-shadow: none; /* Optional: Simplify style by removing shadows */
+    }
+}
