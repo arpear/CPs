@@ -812,5 +812,28 @@ nav ul li a:hover {
         border-radius: 5px; /* Optional: Smooth corners */
         box-shadow: none; /* Optional: Simplify style by removing shadows */
     }
+
+    .latest-banner {
+        position: fixed;
+        top: 0;
+        left: 10;
+        width: 100%;
+        background-color: var(--color7); /* Blue color, change as needed */
+        color: var(--color1);
+        padding: 15px;
+        z-index: 1000; /* Ensure it's above other content */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .close-banner {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
 }
 
