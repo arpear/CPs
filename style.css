@@ -620,6 +620,29 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+.latest-banner {
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 55%;
+    background-color: var(--color7); /* Blue color, change as needed */
+    color: var(--color1);
+    padding: 15px;
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
 /* Responsive styles for small screens */
 @media screen and (max-width: 768px) {
     body {
@@ -790,3 +813,4 @@ nav ul li a:hover {
         box-shadow: none; /* Optional: Simplify style by removing shadows */
     }
 }
+
