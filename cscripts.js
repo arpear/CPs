@@ -203,3 +203,16 @@ document.querySelectorAll('.maximize-btn').forEach(btn => {
         buttonContainerSmall.classList.toggle('active');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Find all h4 elements
+    const h4s = document.querySelectorAll('h4');
+
+    // Loop through all h4 elements to find the one with 'LATEST'
+    h4s.forEach(function(h4) {
+        if(h4.textContent.includes('LATEST')) {
+            // Append a FontAwesome star icon to the title
+            h4.innerHTML += ' <i class="fas fa-star"></i>'; // Adjust the class for different star styles
+        }
+    });
+});
