@@ -632,6 +632,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom-left-radius: 10px; /* Adjust the radius as needed */
+    border-bottom-right-radius: 10px; /* Adjust the radius as needed */
 }
 
 .close-banner {
@@ -825,6 +827,8 @@ nav ul li a:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-bottom-left-radius: 10px; /* Adjust the radius as needed */
+        border-bottom-right-radius: 10px; /* Adjust the radius as needed */
     }
     
     .close-banner {
