@@ -56,13 +56,14 @@ h1.main {
     text-decoration: none; /* Remove underline from link */
     font-size: 50px; /* Increase size of arrow symbol */
     font-weight: 900;
-    transition: color 0.3s, width 0.3s, height 0.3s; /* Smooth transition for color, width, and height */
+    transition: color 0.3s, width 0.3s, height 0.3s, font-size 0.3s; /* Smooth transition for color, width, and height */
     z-index: 100; /* Ensure it's above other elements */
     cursor: pointer;
 }
 
 .back-to-top:hover {
     color: var(--color4); /* White arrow color */
+    font-size: 70px; /* Increase size of arrow symbol */
 }
 
 h2 {
