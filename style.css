@@ -621,13 +621,15 @@ nav ul li a:hover {
 }
 
 .latest-banner {
+    border-bottom: 6px solid var(--color6);
     position: fixed;
     top: 0;
     left: 10;
-    width: 55%;
-    background-color: var(--color7); /* Blue color, change as needed */
+    width: 65%;
+    background-color: #000000ac; /* Blue color, change as needed */
     color: var(--color1);
-    padding: 15px;
+    padding: 5px;
+    padding-left: 20px;
     z-index: 1000; /* Ensure it's above other content */
     display: flex;
     justify-content: space-between;
@@ -643,6 +645,14 @@ nav ul li a:hover {
     font-size: 30px;
     cursor: pointer;
 }
+
+/* Highlight the latest video */
+#latestVideo {
+    background-color: var(--color6); /* Sets the background color to white */
+    padding: 20px; /* Adds some padding around the video */
+    margin: 20px 0; /* Adds margin above and below the video for separation */
+}
+
 
 
 /* Responsive styles for small screens */
@@ -676,6 +686,7 @@ nav ul li a:hover {
     h1 {
         font-size: 1.5rem;
         text-align: center;
+        margin-top: 80px;
     }
 
     li {
@@ -823,6 +834,7 @@ nav ul li a:hover {
         background-color: var(--color7); /* Blue color, change as needed */
         color: var(--color1);
         padding: 15px;
+        padding-left: 35px;
         z-index: 1000; /* Ensure it's above other content */
         display: flex;
         justify-content: space-between;
@@ -837,6 +849,7 @@ nav ul li a:hover {
         color: white;
         font-size: 30px;
         cursor: pointer;
+        padding-right: 35px;
     }
     
 }
