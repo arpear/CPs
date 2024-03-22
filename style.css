@@ -757,6 +757,11 @@ nav ul li a:hover {
         cursor: pointer;
     }
 
+    .back-to-top:hover {
+        color: var(--color4); /* White arrow color */
+        font-size: 3.5rem; /* Increase size of arrow symbol */
+    }
+
     nav ul li h4 {
         display: inline-block;
         text-align: center;
@@ -831,7 +836,7 @@ nav ul li a:hover {
         position: fixed;
         top: 0;
         left: 10;
-        width: 100%;
+        width: 90%;
         background-color: var(--color7); /* Blue color, change as needed */
         color: var(--color1);
         padding: 15px;
